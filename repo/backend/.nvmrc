@@ -1,0 +1,11 @@
+v18.13.0
+
+SERVER_PORT=example
+
+DATABASE_PASSWORD='example'
+DATABASE_USERNAME='example'
+DATABASE_HOST='example'
+DATABASE_PORT=example
+DATABASE='example'
+
+JWT_SECRET = example

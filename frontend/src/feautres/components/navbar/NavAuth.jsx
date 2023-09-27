@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from "../../../context/UserContext";
 import jwt_decode from "jwt-decode";
+import Button from "../../../components/Button";
 
 function NavAuth() {
   const {token, setToken} = useContext(UserContext);
@@ -28,10 +29,10 @@ function NavAuth() {
       {!user ? (
         <>
           <Link to={'/login'}>
-            <button  className="hover:-translate-y-[1px]">Sign In</button>
+            <Button variant={"hover:-translate-y-[1px]"} text={"Sign In"}/>
           </Link>
           <Link to='/register'>
-            <button className="text-white py-2 px-4 bg-primary rounded shadow- shadow-slate-400 hover:brightness-90">Register</button>
+            <Button variant={"text-white py-2 px-4 bg-primary rounded shadow-slate-400 hover:brightness-90"} text={"Register"}/>
           </Link>
         </>
       ) : (

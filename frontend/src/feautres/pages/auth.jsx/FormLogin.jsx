@@ -1,5 +1,5 @@
 import axios from "axios"
-import Button from "./Button";
+import Button from "../../../components/Button";
 import Input from "./Input";
 import jwt_decode from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
@@ -40,7 +40,7 @@ function FormLogin() {
         <h1 className="text-3xl font-medium">Login</h1>
         <Input setInput={setEmail} label={'Email'} name={`email`} />
         <Input setInput={setPassword} label={'Password'} type={'password'} />
-        <Button type={"Submit"} text={'Login'} />
+        <Button type={"Submit"} text={'Login'} variant={"w-full h-10 bg-black rounded mt-2"} />
         <p className="text-xs">Don{`'`}t have an account?
         <Link to='/register' className="text-black font-bold">SignUp</Link>
         </p>

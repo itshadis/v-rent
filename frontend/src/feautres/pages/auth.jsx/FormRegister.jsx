@@ -1,5 +1,5 @@
 import axios from "axios";
-import Button from "./Button";
+import Button from "../../../components/Button";
 import Input from "./Input";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -35,7 +35,7 @@ function FormRegister() {
           <Input setInput={setEmail} variant={"w-52"} label={'Email'} type={'email'}/>
           <Input setInput={setPassword} variant={"w-52"} label={'Password'} type={'password'} />
         </div>
-        <Button type={"Submit"} text={'Register'} />
+        <Button type={"Submit"} text={'Register'} variant={"w-full h-10 bg-black rounded mt-2"} />
         <p className="text-xs">Already have an account?
         <Link to='/login' className="text-black font-bold">Login</Link>
         </p>

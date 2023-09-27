@@ -10,15 +10,13 @@ const Home = () => {
 
 	return (
 		<Public>
-			<div>
-				{/* Home ngoding disini */}
-				<Hero />
-				<Plan />
-				<VehicleModels />
-				<Banner />
-				<Choose />
-				<Testimoni />
-			</div>
+			{/* Home ngoding disini */}
+			<Hero />
+			<Plan />
+			<VehicleModels />
+			<Banner />
+			<Choose />
+			<Testimoni />
 		</Public>
 	);
 };

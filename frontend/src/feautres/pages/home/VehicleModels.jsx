@@ -30,7 +30,7 @@ function VehicleModels() {
       <div className="flex flex-col items-center text-white gap-2 mb-20">
         <p className="text-2xl">Vehicle Models</p>
         <h1 className="text-4xl font-medium">Our Rental Fleet</h1>
-        <h3 className="w-96 text-center">
+        <h3 className="lg:w-96 text-center">
           Choose a variety of our amazing vehicles to rent for your next trip
         </h3>
       </div>

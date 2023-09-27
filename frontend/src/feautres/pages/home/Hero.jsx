@@ -1,44 +1,25 @@
-import Rush from "./../../../assets/images/rush.png";
-import Rectangle from "./../../../assets/images/Rectangle 2.png";
+import rush from "./../../../assets/images/rush.png";
+import shape from '../../../assets/shape/hero-shape.png';
+import Button from "../../../components/Button";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     // Hero ngoding disini
-    <section className="pt-36 bg-section">
-      <div className="container">
-        <div className="flex flex-wrap">
-          <div className="w-full self-center px-4 lg:w-1/3 sm:z-50">
-            <h1 className="text-xl font-bold mb-3 md:text-2xl">
-              Plan Your Trip
-            </h1>
-            <h1 className="text-3xl font-semibold md:text-5xl">
-              Save{" "}
-              <span className="text-primary sm:text-black md:text-black lg:text-primary">
-                Much
-              </span>{" "}
-              With Our Rental
-            </h1>
-            <p className="text-base font-medium text-grey-text my-5">
-              Rent your dream cars. Low prices, drive anywhere. Easy pick-up
-              option and more
-            </p>
-            <button className="bg-primary rounded-md text-white p-2 hover:bg-section hover:text-black shadow">
-              <Link to="/book">Book now</Link>
-            </button>
-          </div>
-          <div className="w-full self-end px-4 lg:w-2/3">
-            <div className="relative mt-10 lg:mt-9">
-              <img
-                src={Rush}
-                alt=""
-                className="max-w-full absolute z-40 -bottom-80 md:relative md:-bottom-10 lg:-bottom-10"
-              />
-              <span className="absolute -z-10 -bottom-96 lg:right-0 lg:-bottom-40 md:-bottom-32 md:-right-52 sm:z-10">
-                <img src={Rectangle} alt="" />
-              </span>
-            </div>
-          </div>
+    <section className="bg-section">
+      <div className="container lg:h-screen flex justify-between items-center py-20 min-[1250px]:py-0">
+        <div className="flex flex-col gap-6 w-[30rem]">
+          <h2 className="text-3xl font-semibold">Plan Your Trip</h2>
+          <h1 className="text-6xl font-semibold">Save <span className="text-primary">much</span> with our rental</h1>
+          <p className="text-slate-600 w-80">Rent your dreams car. Low prices. drive anywhare. Easy pick-up options and more.</p>
+          <Link to={"/book"}>
+            <Button text={'Book Now'} variant={"text-white font-medium py-3 px-6 bg-primary rounded shadow-slate-400 hover:brightness-90 shadow-md"} />
+          </Link>
+        </div>
+
+        <div className="invisible min-[1250px]:visible absolute right-0">
+          <img className='h-[32rem]' src={shape} alt="hero-shape.png" />
+          <img className="absolute z-10 top-32 -left-[50%] scale-110" src={rush} alt="eush.png" />
         </div>
       </div>
     </section>

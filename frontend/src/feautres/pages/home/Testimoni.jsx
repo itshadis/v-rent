@@ -1,6 +1,5 @@
-import { Card } from "flowbite-react";
-import icon1 from "../../../assets/icons/icont1.svg";
-import Testi from "../../../assets/json/testimoni.json";
+// import { Card } from "flowbite-react";
+// import icon1 from "../../../assets/icons/icont1.svg";
 
 const Testimoni = () => {
   return (
@@ -17,7 +16,7 @@ const Testimoni = () => {
             since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type
           </p>
-          <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          {/* <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             {Testi.map((data) => {
               return (
                 <Card
@@ -46,7 +45,7 @@ const Testimoni = () => {
                 </Card>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

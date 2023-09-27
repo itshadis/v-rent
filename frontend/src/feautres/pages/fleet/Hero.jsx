@@ -1,4 +1,4 @@
-import rectangle from "/src/assets/images/fleet/Rectangle.png";
+import shape from "/src/assets/shape/fleet-shape.png";
 import rush from "/src/assets/images/fleet/rush.png";
 import innova from "/src/assets/images/fleet/innova.png";
 
@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="h-screen relative">
             <img
               className="absolute h-screen w-full z-0"
-              src={rectangle}
+              src={shape}
               alt=""
             />
             <img

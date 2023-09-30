@@ -3,10 +3,10 @@ const express = require('express');
 const cors = require('cors');
 const PORT = process.env.SERVER_PORT || 3001;
 
-const userRouter = require('./routes/usersRoutes');
-const carRouter = require('./routes/carsRoutes');
-const transactionRouter = require('./routes/transactionsRoutes');
-const testimoniRouter = require('./routes/testimoniesRoutes');
+const userRouter = require('./src/routes/usersRoutes');
+const carRouter = require('./src/routes/carsRoutes');
+const transactionRouter = require('./src/routes/transactionsRoutes');
+const testimoniRouter = require('./src/routes/testimoniesRoutes');
 
 const app = express();
 

@@ -1,10 +1,5 @@
 {
-  "bulids" : [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "version": 2,
   "routes": [
     {
       "src": "/(.*)",

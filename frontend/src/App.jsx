@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Admin from "./pages/Admin";
 import Book from "./pages/Book";
 import Fleet from "./pages/Fleet";
-import Admin from "./pages/Admin";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
 import Unauthorized from "./pages/Unauthorized";
+import { Route, Routes } from "react-router-dom";
 import { UserContext } from "./context/UserContext";
 import { useState } from "react";
 

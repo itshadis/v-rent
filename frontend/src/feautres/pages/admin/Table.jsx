@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import axios from "axios";
+import UpdateModal from "./UpdateModal";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../../context/UserContext";
 import { Modal } from 'flowbite-react';
-import UpdateModal from "./UpdateModal";
 
 const Table = () => {
   const [openModal, setOpenModal] = useState(null);

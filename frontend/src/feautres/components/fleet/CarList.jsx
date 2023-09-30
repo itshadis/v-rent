@@ -13,7 +13,6 @@ const CarList = () => {
 
   const getCarList = async () => {
     const { data } = await axios.get("http://localhost:3003/api/cars");
-    console.log(data.data);
 
     if (data) {
       setCarList(data.data);
@@ -29,9 +28,9 @@ const CarList = () => {
     navigate("/book");
   };
 
-  return carList.map((e) => {
+  return carList.map((e, index) => {
     return (
-      <div
+      <div key={index}
         className={`${
           e.availability
             ? "transition-all duration-200 hover:scale-105"

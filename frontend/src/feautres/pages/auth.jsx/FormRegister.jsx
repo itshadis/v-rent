@@ -25,15 +25,15 @@ function FormRegister() {
   return (
     <div className="flex flex-col">
       <p className="mb-2 text-center text-lg text-slate-600">{msg}</p>
-      <form onSubmit={handleSubmit} className="p-4 bg-primary text-white flex flex-col items-center gap-6 rounded-lg shadow-mdshadow-slate-400" action="">
+      <form onSubmit={handleSubmit} className="p-4 bg-primary text-white flex flex-col items-center gap-2 md:gap-6 rounded-lg shadow-mdshadow-slate-400" action="">
         <h1 className="text-3xl">Register</h1>
-        <div className="flex gap-2">
-          <Input setInput={setName} variant={"w-52"} label={'Name'} />
-          <Input setInput={setNo_Hp} variant={"w-52"} label={"Phone Number"} />
+        <div className="flex flex-col md:flex-row gap-2">
+          <Input setInput={setName} variant={"w-60 lg:w-52"} label={'Name'} />
+          <Input setInput={setNo_Hp} variant={"w-60 lg:w-52"} label={"Phone Number"} />
         </div>
-        <div className="flex gap-2">
-          <Input setInput={setEmail} variant={"w-52"} label={'Email'} type={'email'}/>
-          <Input setInput={setPassword} variant={"w-52"} label={'Password'} type={'password'} />
+        <div className="flex flex-col md:flex-row gap-2">
+          <Input setInput={setEmail} variant={"w-60 lg:w-52"} label={'Email'} type={'email'}/>
+          <Input setInput={setPassword} variant={"w-60 lg:w-52"} label={'Password'} type={'password'} />
         </div>
         <Button type={"Submit"} text={'Register'} variant={"w-full h-10 bg-black rounded mt-2"} />
         <p className="text-xs">Already have an account?

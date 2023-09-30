@@ -17,8 +17,8 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="invisible min-[1250px]:visible absolute right-0">
-          <img className='h-[32rem]' src={shape} alt="hero-shape.png" />
+        <div className="invisible lg:visible absolute right-0">
+          <img className='h-[28rem] min-[1250px]:h-[32rem]' src={shape} alt="hero-shape.png" />
           <img className="absolute z-10 top-32 -left-[50%] scale-110" src={rush} alt="eush.png" />
         </div>
       </div>

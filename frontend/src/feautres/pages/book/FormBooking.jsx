@@ -1,23 +1,23 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-children-prop */
-import { useContext, useEffect, useState } from "react";
+import axios from "axios";
+import brio from "../../../assets/images/brio.png";
+import calendar from "../../../assets/icons/icon-calendar.png";
+import hiace from "../../../assets/images/hiace.png";
+import innova from "../../../assets/images/innova.png";
+import jwt_decode from "jwt-decode";
+import location from "../../../assets/icons/icon-location.png";
+import mail from "../../../assets/icons/icon-mail-form.png";
+import rush from "../../../assets/images/rush.png";
 import PickDate from "../../components/book/PickDate";
 import PickLocation from "../../components/book/PickLocation";
 import SelectCar from "../../components/book/SelectCar";
-import { Modal } from "flowbite-react";
-import user from "../../../assets/icons/icon-user.png";
-import mail from "../../../assets/icons/icon-mail-form.png";
-import calendar from "../../../assets/icons/icon-calendar.png";
-import location from "../../../assets/icons/icon-location.png";
-import innova from "../../../assets/images/innova.png";
-import rush from "../../../assets/images/rush.png";
-import brio from "../../../assets/images/brio.png";
-import hiace from "../../../assets/images/hiace.png";
 import Swal from "sweetalert2";
+import user from "../../../assets/icons/icon-user.png";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { UserContext } from "../../../context/UserContext";
-import jwt_decode from "jwt-decode";
+import { Modal } from "flowbite-react";
+import { useContext, useEffect, useState } from "react";
 
 const FormBooking = () => {
   const [openModal, setOpenModal] = useState(null);
@@ -113,7 +113,7 @@ const FormBooking = () => {
   };
 
   return (
-    <div className="mt-5 mb-10">
+    <div className="mt-5">
       <h1 className="text-2xl font-semibold mb-4 md:-translate-x-10">
         Search and Book Car
       </h1>

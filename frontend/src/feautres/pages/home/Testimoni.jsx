@@ -3,20 +3,20 @@
 
 const Testimoni = () => {
   return (
-    <div className="bg-gray-100">
-      <section className="">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <p className="text-center font-bold">Review by Client</p>
-          <h1 className="text-center text-5xl font-bold tracking-tight pt-4">
-            Our&apos;s Testimoni
-          </h1>
-          <p className="pt-6 text-center leading-relaxed text-gray-500 xl:text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type
-          </p>
-          {/* <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+    
+    <section className="bg-section">
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <p className="text-center text-2xl font-semibold">Review by Client</p>
+        <h1 className="text-center text-5xl font-semibold tracking-tight pt-4">
+          Our&apos;s Testimoni
+        </h1>
+        <p className="pt-6 text-center leading-relaxed text-gray-500 xl:text-lg">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type
+        </p>
+        {/* <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             {Testi.map((data) => {
               return (
                 <Card
@@ -45,10 +45,9 @@ const Testimoni = () => {
                 </Card>
               );
             })}
-          </div> */}
-        </div>
-      </section>
-    </div>
+        </div> */}
+      </div>
+    </section>
   );
 };
 

@@ -1,12 +1,10 @@
 import Public from '../layouts/Public'
-import Conten from "../feautres/pages/about/Conten";
+import Content from "../feautres/pages/about/Content";
 
 const About = () => {
   return (
     <Public>
-        <div >
-           <Conten />
-        </div>
+      <Content />
     </Public>
   )
 }

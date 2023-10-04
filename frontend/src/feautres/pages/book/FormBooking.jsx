@@ -32,11 +32,10 @@ const FormBooking = () => {
   const [saveLocationOff, setSaveLocationOff] = useState();
   const [price, setPrice] = useState();
   const {token} = useContext(UserContext);
-  const [msg, setMsg] = useState();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     axios.get(`https://v-rent-backend.vercel.app/api/cars/${carId}`).then((data) => {
         setPrice(data.data.data[0].price);
@@ -60,11 +59,11 @@ const FormBooking = () => {
           navigate("/login");
         }
       });
-    const decode = jwt_decode(token);
-
-    setName(decode.name);
-    setEmail(decode.email);
     } else {
+      const decode = jwt_decode(token);
+      setName(decode.name);
+      setEmail(decode.email);
+
       props.setOpenModal("default");
     }
   };
@@ -102,10 +101,8 @@ const FormBooking = () => {
       });
     }, 200);
     } catch (error) {
-      setMsg(error.response.data.message);
-
       Swal.fire({
-        title: msg,
+        title: 'some field must be filled, cannot be empty',
         confirmButtonColor: "#C05F31",
         icon: "warning",
       })
@@ -260,7 +257,7 @@ const FormBooking = () => {
                       ? rush
                       : selectedCar === "Hiace"
                       ? hiace
-                      : selectedCar === "brio"
+                      : selectedCar === "Brio"
                       ? brio
                       : ""
                   }

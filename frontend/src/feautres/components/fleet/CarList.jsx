@@ -39,7 +39,7 @@ const CarList = () => {
       >
         <div className="flex flex-col items-center sm:w-1/2">
           <div className="flex items-center justify-center h-full">
-            <img src={`/src/assets/images/fleet/${e.img}.png`} alt="" />
+            <img src={`/fleet/${e.img}.png`} alt="" />
           </div>
 
           <button

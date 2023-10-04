@@ -1,6 +1,4 @@
 import shape from "/src/assets/shape/fleet-shape.png";
-import rush from "/src/assets/images/fleet/rush.png";
-import innova from "/src/assets/images/fleet/innova.png";
 
 const Hero = () => {
   return (
@@ -8,7 +6,7 @@ const Hero = () => {
       <div className=" flex justify-center w-full lg:h-screen overflow-hidden ">
         <div className="w-4/5 md:w-3/5 lg:w-2/5">
           <div className="text-center lg:text-left flex flex-col lg:justify-center items-center md:px-8 lg:px-12 xl:px-16 2xl:px-20  py-20 md:py-28 lg:pt-72 xl:pt-56 gap-4">
-            <img className="lg:hidden" src={rush} alt="" />
+            <img className="lg:hidden" src={'/fleet/rush.png'} alt="" />
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold tracking-wide leading-[1.15]">
               Best <span className="text-[#C05F31]">variety</span> vehicle for
               all you needs
@@ -28,10 +26,10 @@ const Hero = () => {
             />
             <img
               className="absolute z-10 bottom-5 right-0 lg:mr-0 xl:-mr-10 2xl:-mr-16 w-2/3"
-              src={innova}
+              src={'/fleet/innova.png'}
               alt=""
             />
-            <img className="absolute z-20 w-4/5" src={rush} alt="" />
+            <img className="absolute z-20 w-4/5" src={'/fleet/rush.png'} alt="" />
           </div>
         </div>
       </div>

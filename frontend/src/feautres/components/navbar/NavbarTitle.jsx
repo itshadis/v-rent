@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import icon from '../../../assets/icons/icon-header.png';
+import { Link } from 'react-router-dom';
 
 const NavbarTitle = () => {
 	return (

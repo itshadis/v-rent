@@ -1,10 +1,10 @@
-import cars from "/src/assets/icons/fleet/cars.svg";
-import year from "/src/assets/icons/fleet/year.svg";
 import ac from "/src/assets/icons/fleet/ac.svg";
-import steer from "/src/assets/icons/fleet/steer.svg";
-import seat from "/src/assets/icons/fleet/seat.svg";
-import { useState, useEffect } from "react";
 import axios from "axios";
+import cars from "/src/assets/icons/fleet/cars.svg";
+import seat from "/src/assets/icons/fleet/seat.svg";
+import steer from "/src/assets/icons/fleet/steer.svg";
+import year from "/src/assets/icons/fleet/year.svg";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const CarList = () => {
@@ -12,7 +12,7 @@ const CarList = () => {
   const navigate = useNavigate();
 
   const getCarList = async () => {
-    const { data } = await axios.get("http://localhost:3003/api/cars");
+    const { data } = await axios.get("https://v-rent-backend.vercel.app/api/cars");
 
     if (data) {
       setCarList(data.data);

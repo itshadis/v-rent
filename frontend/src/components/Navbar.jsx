@@ -1,7 +1,7 @@
-import { useState } from "react";
 import NavAuth from "../feautres/components/navbar/NavAuth";
-import NavList from "../feautres/components/navbar/NavList";
 import NavbarTitle from "../feautres/components/navbar/NavbarTitle";
+import NavList from "../feautres/components/navbar/NavList";
+import { useState } from "react";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);

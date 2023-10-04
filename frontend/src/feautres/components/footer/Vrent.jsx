@@ -1,5 +1,5 @@
-import phone from '../../../assets/icons/icon-phone.png';
 import mail from '../../../assets/icons/icon-mail.png';
+import phone from '../../../assets/icons/icon-phone.png';
 
 function Vrent() {
   return (

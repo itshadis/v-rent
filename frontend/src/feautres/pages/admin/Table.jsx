@@ -20,7 +20,7 @@ const Table = () => {
   }, [openUpdateModal]);
 
   const getTransactions = async () => {
-    const data = await axios.get("http://localhost:3003/api/transactions", {
+    const data = await axios.get("https://v-rent-backend.vercel.app/api/transactions", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -30,7 +30,7 @@ const Table = () => {
 
   const handleUpdate = async (e) => {
     e.preventDefault();
-    const data = await axios.get(`http://localhost:3003/api/transactions/${e.target.value}`, {
+    const data = await axios.get(`https://v-rent-backend.vercel.app/api/transactions/${e.target.value}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -43,7 +43,7 @@ const Table = () => {
   const handleDetail = async (e) => {
     e.preventDefault();
 
-    const data = await axios.get(`http://localhost:3003/api/transactions/${e.target.value}`, {
+    const data = await axios.get(`https://v-rent-backend.vercel.app/api/transactions/${e.target.value}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import Button from "../../../components/Button";
+import jwt_decode from "jwt-decode";
 import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from "../../../context/UserContext";
-import jwt_decode from "jwt-decode";
-import Button from "../../../components/Button";
 
 function NavAuth() {
   const {token, setToken} = useContext(UserContext);

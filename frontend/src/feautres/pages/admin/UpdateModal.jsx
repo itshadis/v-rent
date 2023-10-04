@@ -17,14 +17,14 @@ function UpdateModal({ id, status, setOpenUpdateModal }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:3003/api/transactions/update/${id}`, {
-        status: updateStatus
-      }, 
-      {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
+      const res = await axios.put(`https://v-rent-backend.vercel.app/api/transactions/update/${id}`, {
+                                status: updateStatus
+                              }, 
+                              {
+                                headers: {
+                                  Authorization: `Bearer ${token}`
+                                }
+                              });
 
       setOpenUpdateModal(false);
 

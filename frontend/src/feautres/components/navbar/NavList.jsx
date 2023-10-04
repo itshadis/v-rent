@@ -1,6 +1,6 @@
 import jwt_decode from "jwt-decode";
-import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../../context/UserContext";
 
 function NavList() {

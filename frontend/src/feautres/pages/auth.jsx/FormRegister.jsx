@@ -14,7 +14,7 @@ function FormRegister() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const data = await axios.post("http://localhost:3003/api/users/register", {name, email, password, no_hp});
+      const data = await axios.post("https://v-rent-backend.vercel.app/api/users/register", {name, email, password, no_hp});
 
       setMsg(data.data.message);
     } catch (error) {

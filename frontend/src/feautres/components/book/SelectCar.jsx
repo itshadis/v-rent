@@ -1,6 +1,6 @@
+import axios from "axios";
 import car from "../../../assets/icons/icon-car.png";
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 // eslint-disable-next-line react/prop-types
 const SelectCar = ({ setCar, setCarId }) => {
@@ -11,7 +11,7 @@ const SelectCar = ({ setCar, setCarId }) => {
   }, []);
 
   const getCars = async () => {
-    const response = await axios.get("http://localhost:3003/api/cars");
+    const response = await axios.get("https://v-rent-backend.vercel.app/api/cars");
     setCars(response.data.data);
   };
 

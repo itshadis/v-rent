@@ -16,7 +16,7 @@ function VehicleModels() {
 
   const getCar = async () => {
     axios
-      .get("http://localhost:3003/api/cars")
+      .get("https://v-rent-backend.vercel.app/api/cars")
       .then((res) => setCars(res.data.data));
   };
 

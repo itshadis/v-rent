@@ -38,7 +38,7 @@ const FormBooking = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:3003/api/cars/${carId}`).then((data) => {
+    axios.get(`https://v-rent-backend.vercel.app/api/cars/${carId}`).then((data) => {
         setPrice(data.data.data[0].price);
     });
   }, [carId]);
@@ -73,7 +73,7 @@ const FormBooking = () => {
     e.preventDefault();
     try {
       await axios
-      .post(`http://localhost:3003/api/transactions/create`, {
+      .post(`https://v-rent-backend.vercel.app/api/transactions/create`, {
         car_id: carId,
         pickup_date: datePickUp,
         pickoff_date: datePickOff,

@@ -20,8 +20,8 @@ import { Modal } from "flowbite-react";
 import { useContext, useEffect, useState } from "react";
 
 const FormBooking = () => {
-  const [openModal, setOpenModal] = useState(null);
   const props = { openModal, setOpenModal };
+  const [openModal, setOpenModal] = useState(null);
   const [selectedCar, setSelectedCar] = useState();
   const [carId, setCarId] = useState(1);
   const [datePickUp, setDatePickUp] = useState();

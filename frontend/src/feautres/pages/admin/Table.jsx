@@ -6,8 +6,8 @@ import { UserContext } from "../../../context/UserContext";
 import { Modal } from 'flowbite-react';
 
 const Table = () => {
-  const [openModal, setOpenModal] = useState(null);
   const props = { openModal, setOpenModal };
+  const [openModal, setOpenModal] = useState(null);
   const {token} = useContext(UserContext)
   const [transactions, setTransactions] = useState();
   const [detailTransaction, setDetailTransaction] = useState();

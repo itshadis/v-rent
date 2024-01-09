@@ -35,6 +35,8 @@ const FormBooking = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const navigate = useNavigate();
+
+  console.log('ok')
   
   useEffect(() => {
     axios.get(`https://v-rent-backend.vercel.app/api/cars/${carId}`).then((data) => {
